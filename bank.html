@@ -1,0 +1,91 @@
+<html>
+<head>
+    <title>JF Bank</title>
+<style> 
+    header, footer {
+        padding: 1em;
+        color: white;
+        background-color: cornflowerblue;
+        clear: left;
+        text-align: center;
+    }
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.main {
+    text-align: left;
+    background: snow;
+}
+
+.header {background: lightskyblue;}
+.footer {background: lightskyblue;}
+.aside1 {background: lightskyblue;}
+.aside2 {background: lightskyblue;}
+
+@media all and (min-width: 768px) {
+    .aside { flex: 1 auto; }
+    .main    { flex: 3 0px; }
+    .aside1 { order: 1; } 
+    .main    { order: 2; }
+    .aside2 { order: 3; }
+    .footer  { order: 4; }
+}
+
+    </style>
+</head>
+
+<body>
+
+<header>
+   <img src="logo.jpg" alt="bank icon" height="169" width="447">
+</header>
+
+<h2 align="center">Login Page</h2>
+
+<form action="home.php" method="post">  
+<h2></h2>
+        <table border="0" align="center">
+            <tr>
+                <td>Username</td>
+                <td><input type="text" name="user" maxlength="13" size="13"></td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="pass" maxlength="13" size="13"></td>
+            </tr>
+                
+            <tr>
+                <td>
+                    <input type="radio" name="type" value="customer" checked> Customer
+                </td>
+                <td>
+                    <input type="radio" name="type" value="employee"> Employee
+                </td> 
+            </tr>
+
+            <tr>
+                <td><input type="submit" value="Enter"></td>
+                <td><a href=IPsupport.html>IPsupport</a></td>
+            </tr>
+        </table>
+
+</form>
+
+<footer> © 2000 - 2016 JK Bank. All rights reserved.</footer>
+
+</body>
+
+</html>

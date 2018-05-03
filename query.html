@@ -1,0 +1,35 @@
+<html>
+<head>
+  <title>Connect to a Database</title>
+</head>
+
+<body>
+  <h1>Connect to Database</h1>
+  Please enter your login information
+
+  <form action="query.php" method="post">
+    <table border="0">
+      <tr>
+        <td>Username</td>
+         <td><input type="text" name="user" maxlength="13" size="13"></td>
+      </tr>
+      <tr>
+        <td>Password</td>
+         <td><input type="password" name="pass" maxlength="13" size="13"></td>
+      </tr>
+	<tr>
+        <td>Databasename</td>
+         <td><input type="text" name="database" maxlength="13" size="13"></td>
+      </tr>
+	<tr>
+        <td>SQLquery</td>
+         <td><input type="text" name="query" maxlength="50" size="25"></td>
+      </tr>
+      <tr>
+      <tr>
+        <td colspan="2"><input type="submit" value="Enter"></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
